@@ -41,6 +41,10 @@
 }
 .plans .cont:hover{
     background-color: var(--light-green) ;
+    border-radius: 0px;
+background: #C6FCE5;
+box-shadow: inset 20px 20px 34px #9ecab7,
+            inset -20px -20px 34px #eeffff;
 }
 
 .plans .cont p{
