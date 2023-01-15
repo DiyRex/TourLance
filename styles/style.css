@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --white:#EBFFFA;
+   --light-green:#C6FCE5;
+   --green:#6EF3D6;
+   --light-blue:#0DCEDA;
+
+   --navy:#283149;
+   --navy-gray: #404258;
+   --blue: #50577A;
+   --gray: #6B728E;
+}
+
+
+
+*::-webkit-scrollbar{
+   width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--light-blue);
+}
+
+.plans .card{
+    text-align: center;
+    border: none;
+    padding: 20px;
+    background-color: var(--green);
+}
+.plans .cont{
+    padding: 40px;
+    background-color: var(--white);
+}
+.plans .cont-active{
+    background-color: var(--light-green) ;
+}
+.plans .cont:hover{
+    background-color: var(--light-green) ;
+}
+
+.plans .cont p{
+    text-align: justify;
+}
