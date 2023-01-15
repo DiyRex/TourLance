@@ -30,21 +30,22 @@
     text-align: center;
     border: none;
     padding: 20px;
-    background-color: var(--green);
+    background: var(--light-green);
+    box-shadow:  20px 20px 40px #a4d1be,
+             -20px -20px;
 }
 .plans .cont{
     padding: 40px;
-    background-color: var(--white);
-}
-.plans .cont-active{
-    background-color: var(--light-green) ;
+    border-radius: 0px;
+background: var(--white);
+box-shadow:  20px 20px 40px #a4d1be,
+             -20px -20px 40px var(--light-green);
 }
 .plans .cont:hover{
-    background-color: var(--light-green) ;
     border-radius: 0px;
-background: #C6FCE5;
+background: var(--light-green);
 box-shadow: inset 20px 20px 34px #9ecab7,
-            inset -20px -20px 34px #eeffff;
+            inset -20px -20px 34px var(--light-green);
 }
 
 .plans .cont p{
