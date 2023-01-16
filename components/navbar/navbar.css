@@ -33,6 +33,7 @@ body{
 }
 
 .nav-link{
+    margin-top: auto;
     display: flex;
     justify-content: space-around;
     text-decoration: none;
@@ -58,6 +59,9 @@ i:hover{
     border-bottom: 2px solid white;
     background-color: transparent;
 }
+
+
+
 .search {
     margin-top: 8px;
     margin-left: 20px;
