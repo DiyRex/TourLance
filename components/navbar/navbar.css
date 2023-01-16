@@ -60,7 +60,9 @@ i:hover{
     background-color: transparent;
 }
 
-
+#srchbr:focus{
+    color: red;
+}
 
 .search {
     margin-top: 8px;
