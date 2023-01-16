@@ -39,6 +39,7 @@
 background: var(--white);
 box-shadow:  20px 20px 40px #a4d1be,
              -20px -20px 40px var(--light-green);
+margin: 55px;
 }
 .plans .cont:hover{
     border-radius: 0px;
