@@ -60,7 +60,6 @@ box-shadow: inset 20px 20px 34px #9ecab7,
 /*Try Something Speecial Start*/
 .flip-card {
     background-color: transparent;
-    width: 190px;
     height: 254px;
     perspective: 1000px;
     font-family: sans-serif;
