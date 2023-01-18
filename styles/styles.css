@@ -124,12 +124,16 @@ transition: fill 0.2s;
 
 .map :hover{
   fill: darkgoldenrod;
-  /*stroke: white;
-  stroke-width: 1px;*/
+  stroke: white;
+  stroke-width: 1px;
 }
 
-.map svg .Mahanuvara:hover{
-  color: red;
+svg{
+  max-width: 500px;
+  padding: 10px;
+}
+.selection-details{
+  border-color: #111;
 }
 
 /*Sri Lanka Map End*/
