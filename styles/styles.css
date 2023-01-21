@@ -12,6 +12,10 @@
    --gray: #6B728E;
 }
 
+body {
+  background-color: var(--gray) !important;
+}
+
 
 
 *::-webkit-scrollbar{
@@ -37,7 +41,7 @@
     padding: 20px;
     background: var(--light-green);
     box-shadow:  11px 11px 22px #c8d9d5,
-                          -11px -11px 22px var(--light-green);
+                 -11px -11px 22px var(--light-green);
 }
 .plans .cont{
     padding: 40px;
