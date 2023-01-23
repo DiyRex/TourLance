@@ -6,6 +6,7 @@ import NotFound from "./views/notfound";
 import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/dashboard";
 import DefaultLayout from "./components/DefaultLayout";
+import Header from "./components/Header";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,8 @@ const router = createBrowserRouter([
         element: <Navigate to="/users" />
       },
       {
-        path: '/dashboard',
-        element: <Dashboard />
+        path: '/header',
+        element: <Header />
       },
       {
         path: '/Users',
