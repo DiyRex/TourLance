@@ -14,6 +14,8 @@
     width: 100%;
     height: auto;
     background-color: #00C7CE;
+    padding-left: 220px;
+    padding-right: 220px;
 }
 
 .mid{
@@ -45,7 +47,7 @@
 }
 
 .line {
-    width: 92%;
+    width: 75%;
     height: 5px;
     color: white;
     background-color: white;
