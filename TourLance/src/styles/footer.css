@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Damion&family=Pacifico&display=swap');
+
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: #00C7CE;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.mid{
+    width: 100%;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+}
+
+.bl-1{
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.bl-2{
+    background-color: rgb(152, 155, 0);
+    flex: 1;
+}
+.bl-3{
+    background-color: rgb(156, 13, 13);
+    flex: 1;
+}
+.bl-4{
+    background-color: rgb(51, 255, 0);
+    flex: 1;
+}
+
+.logo{
+    font-family: 'Damion', cursive;
+    color: white;
+    font-size: 30px;
+    
+}
