@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,10 +13,10 @@ function NavBar() {
         <Container >
           <Navbar.Brand href="#home"><span className="logo-title">TourLance</span></Navbar.Brand>
           <Nav className="me-">
-            <Nav.Link className='nav-link' href="#home">Home</Nav.Link>
-            <Nav.Link className='nav-link' href="#pricing">Pricing</Nav.Link>
-            <Nav.Link className='nav-link' href="#booking">Booking</Nav.Link>
-            <Nav.Link className='nav-link' href="#login">Login</Nav.Link>
+            <Nav.Link className='nav-link' href="#home"><Link className='nav-link' to={"/home"}>Home</Link></Nav.Link>
+            <Nav.Link className='nav-link' href="#pricing"><Link className='nav-link' to={"/pricing"}>Pricing</Link></Nav.Link>
+            <Nav.Link className='nav-link' href="#booking"><Link className='nav-link' to={"/booking"}>Booking</Link></Nav.Link>
+            <Nav.Link className='nav-link' href="#login"><Link className='nav-link' to={"/login"}>Login</Link></Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -7,6 +7,8 @@ import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/dashboard";
 import DefaultLayout from "./components/DefaultLayout";
 import Header from "./components/Header";
+import Booking from "./views/booking.jsx"
+import Pricing from "./views/pricing.jsx"
 
 const router = createBrowserRouter([
   {
@@ -15,11 +17,15 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Navigate to="/home" />
+        element: <Home />
       },
       {
-        path: '/header',
-        element: <Header />
+        path: '/pricing',
+        element: <Pricing />
+      },
+      {
+        path: '/booking',
+        element: <Booking />,
       },
       {
         path: '/home',
