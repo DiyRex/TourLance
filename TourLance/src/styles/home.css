@@ -6,3 +6,6 @@
     position: fixed;
     z-index:100;
 }
+.homeimg img {
+    max-width: 100%;
+}
