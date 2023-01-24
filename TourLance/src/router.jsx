@@ -1,7 +1,7 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 import Login from "./views/login";
 import Signup from "./views/signup";
-import Users from "./views/users";
+import Home from "./views/home";
 import NotFound from "./views/notfound";
 import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/dashboard";
@@ -15,15 +15,15 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Navigate to="/users" />
+        element: <Navigate to="/home" />
       },
       {
         path: '/header',
         element: <Header />
       },
       {
-        path: '/Users',
-        element: <Users />,
+        path: '/home',
+        element: <Home />,
       },
     ]
   },
