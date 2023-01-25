@@ -6,7 +6,6 @@ import NotFound from "./views/notfound";
 import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/dashboard";
 import DefaultLayout from "./components/DefaultLayout";
-import Header from "./components/Header";
 import Booking from "./views/booking.jsx"
 import Pricing from "./views/pricing.jsx"
 

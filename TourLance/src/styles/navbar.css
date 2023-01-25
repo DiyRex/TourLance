@@ -13,7 +13,7 @@
 
 .nav.colorChange{
     background-color: #00c7cebb;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .nav-link{
