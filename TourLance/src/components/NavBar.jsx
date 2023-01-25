@@ -23,7 +23,7 @@ function NavBar() {
     <>
       <Navbar className={colorChange ? 'nav colorChange' : 'nav'}>
         <Container >
-          <Navbar.Brand href="#home"><span className="logo-title">TourLance</span></Navbar.Brand>
+          <Navbar.Brand href="#home"><Link className='logo-link' to={"/home"}><span className="logo-title">TourLance</span></Link></Navbar.Brand>
           <Nav className="me-">
             <Nav.Link className='nav-link' href="#home"><Link className='nav-link' to={"/home"}>Home</Link></Nav.Link>
             <Nav.Link className='nav-link' href="#pricing"><Link className='nav-link' to={"/pricing"}>Pricing</Link></Nav.Link>
