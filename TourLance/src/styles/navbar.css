@@ -8,6 +8,12 @@
 
 .nav {
     background: transparent;
+    transition: 1s;
+}
+
+.nav.colorChange{
+    background-color: #00c7cebb;
+    transition: 1s;
 }
 
 .nav-link{

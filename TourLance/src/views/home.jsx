@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import NavBar from '../components/navbar'
-import Seegiriya from '../assets/seegiriya.jpg'
+import Seegiriya from '../assets/seegiriya2.jpg'
 import '../styles/home.css'
 
 export default function home() {
