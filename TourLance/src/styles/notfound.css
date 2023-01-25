@@ -12,6 +12,8 @@ body {
 }
 img{
     max-width: 100%;
+	animation: anime-3 5s linear infinite;
+
 }
 figure {
 	font-size: 6px;
@@ -28,11 +30,33 @@ h1{
     text-transform: uppercase;
     font-size: 10em;
     text-shadow: 2px 3px 15px;
+	animation: anime-2 1s linear infinite;
+	overflow: default;
 }
+@keyframes anime {
+	0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+	4.3% {opacity: 1; transform: scaleY(1.7);}
+	43% {opacity: 1; transform: scaleX(1.5);}
+  }
+@keyframes anime-2 {
+	0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+	10% {opacity: .1;}
+	50% {opacity: .5; left: 6px;}
+	80% {opacity: .3;}
+	100% {opacity: .6; left: -2px;}
+  }
+
+  @keyframes anime-3 {
+	0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+	4.3% {opacity: 1; transform: scaleY(4);}
+	43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+  }
 h2 {
     color: aqua;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase;	
+	animation: anime 2s linear infinite;
+
 }
 
 @media screen and (min-width: 720px) {
