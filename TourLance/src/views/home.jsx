@@ -11,7 +11,7 @@ export default function home() {
             <NavBar />
         </div>
         <div className="homeimg">
-            <img src={Seegiriya} alt="" />
+            <img className='main-img' src={Seegiriya} alt="" />
         </div>
         <Footer />
     </div>
