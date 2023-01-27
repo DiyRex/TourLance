@@ -7,7 +7,6 @@ import Hiking from '../assets/Hiking.png'
 import Other from '../assets/other.png'
 import Camping from '../assets/camping.png'
 import Container from 'react-bootstrap/Container';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function VisitSL() {
   return (
