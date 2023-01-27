@@ -10,29 +10,39 @@ import Camping from '../assets/camping.png'
 export default function VisitSL() {
   return (
     <>
-      <div className='ancient'>
-        <img src={Ancient} alt="" />
-      </div>
-      <div className='safari'>
-        <img src={Safari} alt="" />
+        <h1 className='visitsl-title'>Visit sri lanka</h1>
+        <div className='rows'>
+            <div className='columns'>
+                <div className='ancient'>
+                    <img src={Ancient} alt="" />
+                
+                </div>
+                <div className='safari'>
+                    <img src={Safari} alt="" />
 
-      </div>
-      <div className='Hiking'>
-        <img src={Hiking} alt="" />
+                </div>
+            </div>
+            <div className='columns-down'>
+                <div className='Hiking'>
+                    <img src={Hiking} alt="" />
 
-      </div>
-      <div className='Camping'>
-        <img src={Camping} alt="" />
+                </div>
+                <div className='Camping'>
+                    <img src={Camping} alt="" />
 
-      </div>
-      <div className='Other'>
-        <img src={Other} alt="" />
+                </div>
+            </div>
+            <div className='columns'>
+                <div className='Other'>
+                    <img src={Other} alt="" />
 
-      </div>
-      <div className='Beach'>
-        <img src={Beach} alt="" />
+                </div>
+                <div className='Beach'>
+                    <img src={Beach} alt="" />
 
-      </div>
+                </div>
+            </div>
+        </div>
     </>
   )
 }
