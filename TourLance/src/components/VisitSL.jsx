@@ -16,30 +16,35 @@ export default function VisitSL() {
             <div className='columns'>
                 <div className='ancient'>
                     <img src={Ancient} alt="" />
-                
+                    <h3 className='first-txt'>Ancient</h3>
                 </div>
                 <div className='safari'>
                     <img src={Safari} alt="" />
+                    <h3></h3>
 
                 </div>
             </div>
             <div className='columns-down'>
                 <div className='Hiking'>
                     <img src={Hiking} alt="" />
+                    <h3>Hiking</h3>
 
                 </div>
                 <div className='Camping'>
                     <img src={Camping} alt="" />
+                    <h3>Camping</h3>
 
                 </div>
             </div>
             <div className='columns'>
                 <div className='Other'>
                     <img src={Other} alt="" />
+                    <h3>Other</h3>
 
                 </div>
                 <div className='Beach'>
                     <img src={Beach} alt="" />
+                    <h3>Beach</h3>
 
                 </div>
             </div>
