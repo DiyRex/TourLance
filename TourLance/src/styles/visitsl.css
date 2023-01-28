@@ -1,71 +1,42 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Montserrat+Alternates:wght@200&display=swap');
 
-body {
-    background: #C6FCE5 !important;
+
+.image-mid-container,
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 45px;
+}
+
+.image-mid-container img {
+  width: 100%;
+  padding: 15px;
+  border-radius: 45px;
+  margin-top: 0%;
+}
+
+.image-title {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.8em;
+  font-weight: bold;
 }
 
 .visitsl-title {
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 4.5em;
-    text-align: center;
-    margin-top: 30px;
-    color: black;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 4.5em;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
 }
-
-.rows {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: center;
-  }
-
-.columns {
-    -ms-flex: 33%;
-    flex: 33%;
-    max-width: 30%;
-    padding: 0 4px;
-  }
-
-.columns-down {
-    -ms-flex: 33%;
-    flex: 33%;
-    max-width: 30%;
-    padding: 0 4px;
-    margin-top: 8%;
-}
-  
-.columns img {
-    width: 100%;
-    border-radius: 70px;
-    padding: 40px 30px 40px 30px;
-}
-
-.columns-down img {
-    width: 100%;
-    border-radius: 70px;
-    padding: 40px 30px 40px 30px;
-}
-
-
-
-  
-  /*@media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }*/
-  
