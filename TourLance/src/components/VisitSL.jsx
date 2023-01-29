@@ -17,37 +17,42 @@ const ImageGrid = () => {
       <Row>
         <Col xs={6} md={4}>
           <div className="image-container">
+          <div id="transparent"></div>
             <img src={Ancient} alt="Image 1" />
             <div className="image-title">Ancient</div>
-            <div id="transparent" className="transparent"></div>
           </div>
         </Col>
         <Col xs={6} md={4}>
           <div className="image-mid-container">
+          <div id="transparent"></div>
             <img src={Safari} alt="Image 2" />
             <div className="image-title">Safari</div>
           </div>
         </Col>
         <Col xs={6} md={4}>
           <div className="image-container">
+          <div id="transparent"></div>
             <img src={Hiking} alt="Image 3" />
             <div className="image-title">Hiking</div>
           </div>
         </Col>
         <Col xs={6} md={4}>
           <div className="image-top-container">
+          <div id="transparent"></div>
             <img src={Other} alt="Image 4" />
             <div className="image-title">Other</div>
           </div>
         </Col>
         <Col xs={6} md={4}>
           <div className="image-container">
+          <div id="transparent"></div>
             <img src={Camping} alt="Image 5" />
             <div className="image-title">Camping</div>
           </div>
         </Col>
         <Col xs={6} md={4}>
           <div className="image-top-container">
+          <div id="transparent"></div>
             <img src={Beach} alt="Image 6" />
             <div className="image-title">Beach</div>
           </div>
