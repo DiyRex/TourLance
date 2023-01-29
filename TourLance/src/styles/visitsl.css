@@ -1,34 +1,38 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Montserrat+Alternates:wght@200&display=swap');
 
 
+.image-top-container,
 .image-mid-container,
 .image-container {
   position: relative;
   text-align: center;
 }
 
+.image-mid-container img,
+.image-top-container img,
 .image-container img {
   width: 100%;
-  padding: 15px;
   border-radius: 45px;
+  margin-bottom: 15%;
+}
+
+/*.image-top-container img{
+  margin-top: -25%;
 }
 
 .image-mid-container img {
-  width: 100%;
-  padding: 15px;
-  border-radius: 45px;
-  margin-top: 0%;
-}
+  margin-top: 25%;
+}*/
 
 .image-title {
   position: absolute;
-  top: 90%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2.8em;
+  font-size: 50px;
   font-weight: bold;
+  text-shadow: 5px 2px 10px #000000;
 }
 
 .visitsl-title {
@@ -38,5 +42,31 @@
   font-size: 4.5em;
   text-align: center;
   margin-top: 30px;
-  color: black;
+  color: white;
+  text-shadow: -2px 2px 4px #000000,
+              2px 2px 4px #0dccda;
 }
+
+#transparent {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  background-color: red;
+}
+
+/*.image-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}*/
