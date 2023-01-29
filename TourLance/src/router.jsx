@@ -7,6 +7,7 @@ import Dashboard from "./views/dashboard";
 import DefaultLayout from "./components/DefaultLayout";
 import Booking from "./views/booking.jsx"
 import Pricing from "./views/pricing.jsx"
+import AboutUS from "./views/AboutUS";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/home',
         element: <Home />,
+      },
+      {
+        path: '/about',
+        element: <AboutUS />,
       },
     ]
   },

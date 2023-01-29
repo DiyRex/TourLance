@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0dccda;
+}
+
+.about .profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: #0dccda;
+    margin: 100px 100px;
+}
+.about .profile-card {
+    display: flex;
+    margin: 10px;
+    scale: 0.9;
+}
+
+.about .title-column {
+    background-color: #0dccda;
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.about .title-column h1{
+    font-size: 3.5rem;
+    color: white;
+}
+.about .title-column span{
+    font-size: 3.5rem;
+    color: aqua;
+}
+.about .mission{
+    background-color: #0dccda;
+    margin: 100px 120px;
+    padding: 50px 150px;
+}
+
+.about .members h3{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}

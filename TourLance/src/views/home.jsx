@@ -7,7 +7,7 @@ import VisitSL from '../components/VisitSL'
 
 export default function home() {
   return (
-    <div>
+    <div className='home-page'>
         <div className="nav-fix">
             <NavBar />
         </div>
