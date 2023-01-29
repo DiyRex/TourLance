@@ -43,7 +43,7 @@
 
 .image-title {
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #EBFFFA;
@@ -61,10 +61,16 @@
   background-color: rgba(0, 0, 0, 0.486);
 
 }
+@media only screen and (max-width: 1400px) {
+  .image-title {
+    bottom: 7%;
+  }
 
+}
 @media only screen and (max-width: 1200px) {
   .image-title {
     font-size: 37px;
+    bottom: 10%;
   }
   .visitsl-title {
     font-size: 3.5em;
