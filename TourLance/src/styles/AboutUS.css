@@ -1,7 +1,10 @@
 body{
     height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
 }
 .about{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,9 +59,46 @@ body{
     padding: 50px 150px;
     border-radius: 10px;
 }
+.about .mission p{
+    color: white;
+    font-size: .8rem;
+}
 
 .about .members h3{
     font-size: 3.5rem;
     color: white;
     text-align: center;
+}
+
+@media (max-width:400px){
+    .about{
+        overflow: hidden;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+    .about .profile-container {
+        grid-template-columns: 1fr;
+    }
+    .about .members h3{
+        font-size: 2.5rem;
+    }
+    .about .title-column h1{
+        font-size: 2.5rem;
+        color: white;
+    }
+    .about .title-column span{
+        font-size: 2.5rem;
+        color: aqua;
+    }
+    .about .mission{
+        background-color: #0dccda;
+        margin-left:10px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+        text-align: justify;
+        width: auto;
+    }
 }
