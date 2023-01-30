@@ -30,6 +30,7 @@ function AboutUS() {
         </div>
         <div className="members">
         <h3>Our Team</h3>
+        <div className="profile-container-hidden">
         <div className="profile-container">
             <div className="profile-card">
               <ProfileCard 
@@ -60,6 +61,7 @@ function AboutUS() {
             ln_url="#"
             />
             </div>
+        </div>
         </div>
         </div>
         <Footer/>    

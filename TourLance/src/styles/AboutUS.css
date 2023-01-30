@@ -5,27 +5,41 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: lightblue;
 }
 
 .about .profile-container {
-    display: flex;
-    justify-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 100px;
-    background-color: #0dccda;
     margin: 100px 100px;
+    border-radius: 10px;
+
+}
+.about .profile-container-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .about .profile-card {
+    width: auto;
+    height: auto;
+    position: relative;
     display: flex;
     margin: 10px;
     scale: 0.9;
 }
 
 .about .title-column {
-    background-color: #0dccda;
+    /* background-color: #0dccda; */
     height: 100px;
     margin-top: 100px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .about .title-column h1{
@@ -40,6 +54,7 @@ body{
     background-color: #0dccda;
     margin: 100px 120px;
     padding: 50px 150px;
+    border-radius: 10px;
 }
 
 .about .members h3{

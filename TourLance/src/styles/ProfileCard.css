@@ -8,6 +8,7 @@
     flex-direction: column;
     background: url(./img/card.png);
     padding: 5px;
+    border-radius: 5px;
 }
 
 .profile-card .upper-container {
