@@ -2,6 +2,7 @@ import React from 'react';
 import ProfileCard from '../components/ProfileCard';
 import NavBar from '../components/navbar';
 import Footer from '../components/Footer';
+import Nav from '../components/nav';
 import Profile from '../assets/ProfileCard/profile.jpg';
 import '../styles/AboutUS.css';
 
@@ -9,7 +10,7 @@ function AboutUS() {
   return (
     <div className='about'>
       <div className="nav-fix">
-            <NavBar />
+            <Nav />
         </div>
         <div className="title-column">
             <h1>About<span>US</span></h1>
