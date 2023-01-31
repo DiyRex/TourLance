@@ -35,6 +35,7 @@ body{
     display: flex;
     margin: 10px;
     scale: 0.9;
+    border: 2px solid white;
 }
 
 .about .title-column {
@@ -58,6 +59,7 @@ body{
     margin: 100px 120px;
     padding: 50px 150px;
     border-radius: 10px;
+    border:2px solid white;
 }
 .about .mission p{
     color: white;
@@ -76,12 +78,20 @@ body{
         overflow-x: hidden;
         width: 100%;
         position: relative;
+        
+    }
+    .about .mission{
+       scale: .9;
+       margin-top: 0;
     }
     .about .profile-container {
         grid-template-columns: 1fr;
+        scale: .9;
     }
     .about .members h3{
         font-size: 2.5rem;
+        margin-top: 10px;
+        margin-bottom: -100px;
     }
     .about .title-column h1{
         font-size: 2.5rem;
