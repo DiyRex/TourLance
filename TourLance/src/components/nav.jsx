@@ -1,7 +1,15 @@
 import React , {useState} from 'react'
+import {Link} from 'react-router-dom';
 import '../styles/nav.css'
 
 function nav() {
+  const [isActive, setActive] = useState(false);
+
+    const toggleClass = () => {
+      setActive(!isActive);
+      setColorchange(true);
+    };
+
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () =>{
         if(window.scrollY >= 80){
@@ -12,13 +20,6 @@ function nav() {
         }
      };
      window.addEventListener('scroll', changeNavbarColor);
-
-    const [isActive, setActive] = useState(false);
-
-    const toggleClass = () => {
-      setActive(!isActive);
-      setColorchange(!isActive)
-    };
   return (
     <div>
         <nav className={colorChange ? 'nav colorChange' : 'nav'}>
@@ -36,10 +37,10 @@ function nav() {
             <div class="hamburger"></div>
         </div>
         <ul className={isActive ? "nav-links active" : "nav-links"}>
-            <li><a href="/">Home</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Booking</a></li>
-            <li><a href="">Login</a></li>
+            <li><Link className='nav-link' to={"/home"}>Home</Link></li>
+            <li><Link className='nav-link' to={"/pricing"}>Pricing</Link></li>
+            <li><Link className='nav-link' to={"/booking"}>Booking</Link></li>
+            <li><Link className='nav-link' to={"/login"}>Login</Link></li>
         </ul>
     </div>
     </div>

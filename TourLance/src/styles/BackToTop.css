@@ -1,0 +1,27 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    /* box-shadow: 0 2px 10px #ccc; */
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.493);
+
+  }
+  
+  .back-to-top:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(1, 177, 139);
+  }
+  
+  @media(max-width:400px){
+    .back-to-top{
+        width: 40px;
+    }
+  }

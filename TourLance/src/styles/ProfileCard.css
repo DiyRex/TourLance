@@ -49,8 +49,10 @@
     flex-direction: row;
     justify-content: space-around;
     width: 55%;
+    margin-left: -10px;
 }
 
 .profile-card .social-container img{
     width: 40px;
+    margin-left: 20px;
 }

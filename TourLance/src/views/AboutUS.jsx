@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Nav from '../components/nav';
 import Profile from '../assets/ProfileCard/profile.jpg';
 import '../styles/AboutUS.css';
+import BackToTop from '../components/BackToTop';
 
 function AboutUS() {
   return (
@@ -65,6 +66,7 @@ function AboutUS() {
         </div>
         </div>
         </div>
+        <BackToTop/>
         <Footer/>    
     </div>
   )

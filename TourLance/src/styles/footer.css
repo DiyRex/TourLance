@@ -1,137 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Damion&family=Pacifico&display=swap');
 
+
 .footer{
+    background-color: lightcoral;
     height: auto;
     width: 100%;
-    background-color: #00C7CE;
+    background: linear-gradient(180deg,#0dccda,rgb(0, 187, 156));
+}
+
+.footer .top-container{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
-.top{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    background-color: #00C7CE;
-    padding-left: 220px;
-    padding-right: 220px;
-}
-
-.mid{
-    width: 100%;
-    height: auto;
-    /* background-color: lightcoral; */
-}
-
-.bottom{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.footer .bottom-container{
     background-color: #098BAC;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    height: auto;
-    margin-top: 10px;
-    padding: 5px 5px;
-}
-
-.line-class{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    font-size: .7rem;
+    padding: none;
+    margin: none;
     height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.line {
-    width: 75%;
-    height: 5px;
     color: white;
-    background-color: white;
-    opacity: 0.6;
+    font-family: Roboto;
+    
 }
 
-.bl-1{
+.footer .data-container{
     display: flex;
-    flex-direction: column;
-    /* background-color: rgb(255, 0, 234); */
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    margin-top: -20px;
 }
-.bl-2{
-    /* background-color: rgb(152, 155, 0); */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.mobile-link-list{
+    display: none;
+}
+
+.footer .social-container{
+    padding: 10px 50px;
     height: auto;
-    color: white;
-}
-.bl-3{
-    /* background-color: rgb(156, 13, 13); */
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: auto;
-    color: white;
-}
-.bl-4{
-    /* background-color: rgb(51, 255, 0); */
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    align-items: center;
-    height: auto;
-    color: white;
 }
 
-.bl-2 ul, .bl-3 ul {
-    list-style: none;
+.footer .social-subcontainer {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 3px solid rgba(255, 255, 255, 0.603);
+    border-radius: 5px;
+    padding-top: 20px;
 }
 
-
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.footer .logo-container h3{
     font-family: 'Damion', cursive;
     color: white;
-    font-size: 30px;
-    /* background-color: lightgreen; */
-    margin-top: 10px;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.footer .logo-container p{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-    width: auto;
-    height: auto;
+.footer .data-container img{
+    scale: .5;
 }
 
-.social ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
+.footer .data-container {
+    color: white;
+    font-family: Roboto;
+    
+}
+.footer .link-list, .contact-form{
+    margin-top: 15px;
+    color: white;
 }
 
-.social ul li {
-    text-decoration: none;
-    list-style: none;
-    margin-left: 30px;
-}
-
-.mail-form{
+.footer .email {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -139,49 +90,96 @@
     margin-top: 20px;
 }
 
-.mail-send {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 4px;
+.footer .contact-form img {
+    width: 15px;
+    
 }
-
-#mail-field{
+.footer .contact-form input {
     outline: none;
+    padding: 5px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 4px;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 5px;    
 }
-
-#mail-field::placeholder{
+.footer .contact-form input::placeholder {
     color: white;
     opacity: 0.7;
-    font-size: 13px;
+    font-size: 13px;    
 }
-
-.info {
-    width: 100%;
-    /* background-color: violet; */
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-}
-
-.info-field {
+.footer .contact-form button {
+    background-color: transparent;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
-    color: white;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50px;
+    margin-left: 4px;
 }
 
-.info-field h3{
-    font-size: 12px;
-    margin-left: 20px;
+@media (max-width:400px){
+    .top-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bottom-container{
+        font-size: .6rem;
+    }
+    .bottom-container p {
+        margin-top: 3px;
+    }
+    .link-list{
+        display: none;
+    }
+    .mobile-link-list{
+        display: block;
+    }
+    .mobile-view{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact-form{
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: -5px;
+    }
+    .data-container{
+        scale: .8;
+        margin-left: -30px;
+    }
+    .data-container img{
+        scale: .5;
+    }
+    .mobile-link-list h3{
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .mobile-link-list{
+        display: block;
+        margin-right: 20px;
+        margin-top: 30px;
+        color: white;
+        font-family: Roboto;
+        font-size: .9rem;
+    }
+    .line-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .line{
+        background-color: rgba(255, 255, 255, 0.63);
+        border-radius: 10px;
+        height: 3px;
+        width: 75%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .logo-container{
+        margin-left: 25px
+    }
 }
