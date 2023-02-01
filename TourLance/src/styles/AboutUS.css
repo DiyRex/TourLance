@@ -112,3 +112,50 @@ body{
         width: auto;
     }
 }
+
+@media (max-width:600px){
+    .about{
+        overflow: hidden;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+        
+    }
+    .about .mission{
+       scale: .95;
+       margin-top: 0;
+    }
+    .about .profile-container {
+        grid-template-columns: 1fr;
+        scale: 1.2;
+        margin-bottom: 190px;
+    }
+    .about .members h3{
+        font-size: 2.8rem;
+        margin-top: 10px;
+        margin-bottom: -100px;
+        padding-bottom: 180px;
+    }
+    .about .title-column h1{
+        font-size: 2.8rem;
+        color: white;
+    }
+    .about .title-column span{
+        font-size: 2.8rem;
+        color: aqua;
+    }
+    .about .mission{
+        background-color: #0dccda;
+        margin-left:10px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+        text-align: justify;
+        width: auto;
+    }
+    .about .mission p{
+        color: white;
+        font-size: .95rem;
+    }
+}
