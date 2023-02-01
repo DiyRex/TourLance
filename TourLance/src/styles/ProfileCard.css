@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Damion&family=Pacifico&family=Roboto&display=swap');
+
+.profile-card .card-container{
+    height: auto;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(./img/card.png);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.profile-card .upper-container {
+    background: url(./img/profile.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.profile-card .lower-container{
+    font-family: 'Roboto', cursive;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+}
+
+.profile-card .lower-container h1 {
+    text-align: center;
+    color: white;
+}
+
+.profile-card .lower-container p {
+    color: white;
+    padding: 5px 25px 5px 25px;
+    text-align: justify;
+}
+
+.profile-card .social-container {
+    margin-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 55%;
+    margin-left: -10px;
+}
+
+.profile-card .social-container img{
+    width: 40px;
+    margin-left: 20px;
+}

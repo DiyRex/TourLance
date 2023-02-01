@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.about .profile-container {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+    margin: 100px 100px;
+    border-radius: 10px;
+
+}
+.about .profile-container-hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about .profile-card {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    scale: 0.9;
+    border: 2px solid white;
+}
+
+.about .title-column {
+    /* background-color: #0dccda; */
+    height: 100px;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.about .title-column h1{
+    font-size: 3.5rem;
+    color: white;
+}
+.about .title-column span{
+    font-size: 3.5rem;
+    color: aqua;
+}
+.about .mission{
+    background-color: #0dccda;
+    margin: 100px 120px;
+    padding: 50px 150px;
+    border-radius: 10px;
+    border:2px solid white;
+}
+.about .mission p{
+    color: white;
+    font-size: .8rem;
+}
+
+.about .members h3{
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:400px){
+    .about{
+        overflow: hidden;
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+        
+    }
+    .about .mission{
+       scale: .9;
+       margin-top: 0;
+    }
+    .about .profile-container {
+        grid-template-columns: 1fr;
+        scale: .9;
+    }
+    .about .members h3{
+        font-size: 2.5rem;
+        margin-top: 10px;
+        margin-bottom: -100px;
+    }
+    .about .title-column h1{
+        font-size: 2.5rem;
+        color: white;
+    }
+    .about .title-column span{
+        font-size: 2.5rem;
+        color: aqua;
+    }
+    .about .mission{
+        background-color: #0dccda;
+        margin-left:10px;
+        margin-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+        text-align: justify;
+        width: auto;
+    }
+}
