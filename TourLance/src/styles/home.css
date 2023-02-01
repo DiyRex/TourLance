@@ -9,3 +9,39 @@
 .homeimg img {
     max-width: 100%;
 }
+
+.home-description{
+    position: absolute;
+    left: 60%;
+    top  : 25%;
+    margin-right: 5%;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 2% 2% 6% 2%;
+    border-radius: 45px;
+}
+
+.main-para {
+    font-size: 20px;
+    color: azure;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button,
+.booknow-button {
+    position: relative;
+    width: 150px;
+    border-radius: 60px;
+}
+
+.explore-button {
+    left: -10%;
+}
+.booknow-button {
+    right: -10%;
+}
