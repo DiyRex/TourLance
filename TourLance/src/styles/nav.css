@@ -88,7 +88,7 @@ body{
     /*backdrop-filter: blur(5px);*/
 }
 
-@media (max-width: 400px){
+@media (max-width: 650px){
     /* .right ul{
         display: none;
     } */
