@@ -1,36 +1,92 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import '../styles/Login.css'
-import Container from 'react-bootstrap/Container';
+import React, { useState } from "react";
 
-export default function Login () {
-    return(
-        <div>
-            <Container>
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                        </Form.Text>
-                    </Form.Group>
+const LoginSignupForm = () => {
+  const [isLogin, setIsLogin] = useState(true);
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
+  const handleLoginSignupToggle = () => {
+    setIsLogin(!isLogin);
+  };
 
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
-                </Form>
-            </Container>
-        </div>
-    )
-}
+  return (
+    <div style={styles.container}>
+      {isLogin ? (
+        <LoginForm />
+      ) : (
+        <SignupForm />
+      )}
+      <div style={styles.switchButtonContainer}>
+        <button style={styles.switchButton} onClick={handleLoginSignupToggle}>
+          {isLogin ? "Sign up" : "Login"}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const LoginForm = () => (
+  <form style={styles.form}>
+    <input style={styles.input} type="text" placeholder="Username" />
+    <input style={styles.input} type="password" placeholder="Password" />
+    <button style={styles.submitButton} type="submit">
+      Submit
+    </button>
+  </form>
+);
+
+const SignupForm = () => (
+  <form style={styles.form}>
+    <input style={styles.input} type="text" placeholder="Username" />
+    <input style={styles.input} type="email" placeholder="Email" />
+    <input style={styles.input} type="password" placeholder="Password" />
+    <button style={styles.submitButton} type="submit">
+      Submit
+    </button>
+  </form>
+);
+
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: 20,
+    backgroundColor: "#fff",
+    boxShadow: "0 0 10px #ccc",
+    borderRadius: 10,
+  },
+  input: {
+    margin: 10,
+    padding: 10,
+    width: "80%",
+    fontSize: 18,
+  },
+  submitButton: {
+    margin: 10,
+    padding: 10,
+    width: "80%",
+    fontSize: 18,
+    backgroundColor: "#4CAF50",
+    color: "#fff",
+    cursor: "pointer",
+    borderRadius: 5,
+  },
+  switchButtonContainer: {
+    marginTop: 20,
+  },
+  switchButton: {
+    padding: 10,
+    backgroundColor: "#fff",
+    color: "#000",
+    cursor: "pointer",
+    borderRadius: 5,
+  },
+};
+
+export default LoginSignupForm;

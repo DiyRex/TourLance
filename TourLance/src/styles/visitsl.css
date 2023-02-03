@@ -44,7 +44,7 @@
 
 .image-title {
   position: absolute;
-  bottom: 8%;
+  bottom: -4%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #EBFFFA;
@@ -55,7 +55,7 @@
 
 #transparent {
   position: absolute;
-  bottom: 10%;
+  bottom: 0%;
   width: 100%;
   height: 20%;
   border-radius: 0 0 45px 45px;
