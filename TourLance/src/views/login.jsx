@@ -1,92 +1,89 @@
+
 import React, { useState } from "react";
+import '../styles/Login.css'
 
 const LoginSignupForm = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [form, setForm] = useState("login");
+  const [fullName, setFullName] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
 
-  const handleLoginSignupToggle = () => {
-    setIsLogin(!isLogin);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fullName, username, email, password, contactNumber);
   };
 
   return (
-    <div style={styles.container}>
-      {isLogin ? (
-        <LoginForm />
-      ) : (
-        <SignupForm />
-      )}
-      <div style={styles.switchButtonContainer}>
-        <button style={styles.switchButton} onClick={handleLoginSignupToggle}>
-          {isLogin ? "Sign up" : "Login"}
-        </button>
+    <div className="formContainer">
+      <div className="formWrapper">
+        {form === "login" ? (
+          <>
+            <h2>Login</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              /><br/><br/>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              /><br/><br/>
+              <button type="submit">Submit</button><br/><br/>
+            </form>
+            <p onClick={() => setForm("signup")}>
+              Not a member? Sign Up
+            </p>
+          </>
+        ) : (
+          <>
+            <h2>Sign Up</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+              /><br/><br/>
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              /><br/><br/>
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              /><br/><br/>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              /><br/><br/>
+              <input
+                type="text"
+                placeholder="Contact Number"
+                value={contactNumber}
+                onChange={(e) => setContactNumber(e.target.value)}
+              /><br/><br/>
+              <button type="submit">Submit</button><br/><br/>
+            </form>
+            <p onClick={() => setForm("login")}>
+              Already a member? Login
+            </p>
+          </>
+        )}
       </div>
     </div>
   );
-};
-
-const LoginForm = () => (
-  <form style={styles.form}>
-    <input style={styles.input} type="text" placeholder="Username" />
-    <input style={styles.input} type="password" placeholder="Password" />
-    <button style={styles.submitButton} type="submit">
-      Submit
-    </button>
-  </form>
-);
-
-const SignupForm = () => (
-  <form style={styles.form}>
-    <input style={styles.input} type="text" placeholder="Username" />
-    <input style={styles.input} type="email" placeholder="Email" />
-    <input style={styles.input} type="password" placeholder="Password" />
-    <button style={styles.submitButton} type="submit">
-      Submit
-    </button>
-  </form>
-);
-
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "100vh",
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: 20,
-    backgroundColor: "#fff",
-    boxShadow: "0 0 10px #ccc",
-    borderRadius: 10,
-  },
-  input: {
-    margin: 10,
-    padding: 10,
-    width: "80%",
-    fontSize: 18,
-  },
-  submitButton: {
-    margin: 10,
-    padding: 10,
-    width: "80%",
-    fontSize: 18,
-    backgroundColor: "#4CAF50",
-    color: "#fff",
-    cursor: "pointer",
-    borderRadius: 5,
-  },
-  switchButtonContainer: {
-    marginTop: 20,
-  },
-  switchButton: {
-    padding: 10,
-    backgroundColor: "#fff",
-    color: "#000",
-    cursor: "pointer",
-    borderRadius: 5,
-  },
 };
 
 export default LoginSignupForm;
