@@ -1,6 +1,10 @@
+body {
+
+}
+  
   .formContainer {
     height: 100vh;
-    background-image: url('./bg.jpg');
+    background-image: url('../assets/[Downloader.la]-63ce61710f861.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -8,10 +12,10 @@
   }
   
   .formWrapper {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.37);
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #000000;
     text-align: center;
     width: 400px;
     max-width: 90%;
